@@ -1,0 +1,14 @@
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\bin\Debug\Winform_QLNH.exe.config
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\bin\Debug\Winform_QLNH.exe
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\bin\Debug\Winform_QLNH.pdb
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.csproj.AssemblyReference.cache
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.Properties.Resources.resources
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.csproj.GenerateResource.cache
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.csproj.CoreCompileInputs.cache
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.exe
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.pdb
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.fLogin.resources
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.fTableManager.resources
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.fAccountProfile.resources
+C:\Users\DELL-5390\Source\Repos\AndrewNguyen-05\Winform_QLNH\obj\Debug\Winform_QLNH.fAdmin.resources
