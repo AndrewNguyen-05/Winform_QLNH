@@ -16,10 +16,5 @@ namespace Winform_QLNH
         {
             InitializeComponent();
         }
-
-        private void btnViewBill_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
