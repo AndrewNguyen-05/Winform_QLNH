@@ -807,7 +807,7 @@
             // panel21
             // 
             this.panel21.Controls.Add(this.dataGridView2);
-            this.panel21.Location = new System.Drawing.Point(8, 90);
+            this.panel21.Location = new System.Drawing.Point(8, 83);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(618, 556);
             this.panel21.TabIndex = 7;
@@ -815,7 +815,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 0);
+            this.dataGridView2.Location = new System.Drawing.Point(6, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
