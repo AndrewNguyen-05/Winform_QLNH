@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Winform_QLNH.DAO;
 
 namespace Winform_QLNH
 {
@@ -19,10 +20,24 @@ namespace Winform_QLNH
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            fTableManager f = new fTableManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            string username = txbUserName.Text;
+            string password = txbPassWord.Text;
+            if(Login(username, password))
+            {
+                fTableManager f = new fTableManager();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }    
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            }    
+        }
+
+        bool Login(string username, string password)
+        {
+            return AccountDAO.Instance.Login(username, password);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
