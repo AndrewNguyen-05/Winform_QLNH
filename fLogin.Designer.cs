@@ -64,6 +64,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(465, 69);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(124, 44);
@@ -88,6 +89,7 @@
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(353, 26);
             this.txbPassWord.TabIndex = 1;
+            this.txbPassWord.Text = "1";
             this.txbPassWord.UseSystemPasswordChar = true;
             // 
             // label1
@@ -115,6 +117,7 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(353, 26);
             this.txbUserName.TabIndex = 0;
+            this.txbUserName.Text = "Admin";
             // 
             // userName
             // 
