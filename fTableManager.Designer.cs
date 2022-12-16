@@ -69,7 +69,7 @@
             this.thonoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1255, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1255, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -186,6 +186,7 @@
             this.btnSwitchTable.TabIndex = 6;
             this.btnSwitchTable.Text = "Chuyển bàn";
             this.btnSwitchTable.UseVisualStyleBackColor = true;
+            this.btnSwitchTable.Click += new System.EventHandler(this.btnSwitchTable_Click);
             // 
             // nmDiscount
             // 
