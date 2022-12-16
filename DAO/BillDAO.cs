@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Winform_QLNH.DTO;
@@ -35,6 +36,30 @@ namespace Winform_QLNH.DAO
                 return bill.ID;
             }
             return -1;
+        }
+
+        public void CheckOut(int id)
+        {
+            string query = "UPDATE Bill SET status = 1 WHERE id = " + id.ToString();
+            DataProvider.Instance.ExecuteNonQuery(query);
+        }
+        public void InsertBill(int id)
+        {
+            DataProvider.Instance.ExecuteNonQuery("USP_InsertBill @idTable", new object[] { id });
+
+        }
+
+        public int GetMaxIDBill()
+        {
+            try
+            {
+                return (int)DataProvider.Instance.ExcuteScalar("SELECT MAX(id) FROM Bill");
+            }
+            catch
+            {
+                return 1;
+            }
+            
         }
     }
 }

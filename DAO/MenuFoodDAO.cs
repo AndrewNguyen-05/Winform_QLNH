@@ -28,7 +28,7 @@ namespace Winform_QLNH.DAO
         {
             List<MenuFood> listMenu = new List<MenuFood>();
 
-            string query = "SELECT f.name, bi.count, f.price, f.price * bi.count AS totalPrice\r\nFROM BillInfo bi, Bill b, Food f\r\nWHERE bi.idBill = b.id AND bi.idFood = f.id AND b.idTable = " + id;
+            string query = "SELECT f.name, bi.count, f.price, f.price * bi.count AS totalPrice FROM BillInfo bi, Bill b, Food f WHERE bi.idBill = b.id AND bi.idFood = f.id AND b.status = 0 AND b.idTable = " + id;
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach(DataRow item in data.Rows)
