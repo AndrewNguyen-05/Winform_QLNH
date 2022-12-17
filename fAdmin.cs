@@ -17,10 +17,10 @@ namespace Winform_QLNH
         public fAdmin()
         {
             InitializeComponent();
-            LoadAccountList();
-            LoadFoodList();
+            LoadDateTimePickerBill();
+            LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
         }
-
+        #region Methods
         void LoadFoodList()
         {
             string query = "SELECT * FROM Food";
@@ -32,6 +32,25 @@ namespace Winform_QLNH
             string query = "EXEC USP_GetAccountByUserName @userName";
 
             dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[]{"Anh0505"} );
+        }
+        void LoadDateTimePickerBill()
+        {
+            DateTime today = DateTime.Now;
+            dtpkFromDate.Value = new DateTime(today.Year, today.Month, 1);
+            dtpkToDate.Value = dtpkFromDate.Value.AddMonths(1).AddDays(-1);
+        }
+
+        void LoadListBillByDate(DateTime checkIn, DateTime checkOut)
+        {
+            dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
         }    
+        #endregion
+
+        #region Events
+        private void btnViewBill_Click(object sender, EventArgs e)
+        {
+            LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
+        }
+        #endregion
     }
 }
